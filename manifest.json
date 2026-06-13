@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Substack Likes Search",
+  "version": "1.1",
+  "description": "いいね・保存（あとで読む）したSubstack記事をキャッシュして全文検索できます",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://substack.com/*", "https://*.substack.com/*"],
+  "action": {
+    "default_title": "Substack Likes Search",
+    "default_icon": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" }
+  },
+  "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Substack Likes Search</h1>
+      <div id="meta">
+        <span id="syncedAt"></span>
+        <button id="settingsBtn">⚙</button>
+        <button id="syncBtn">同期</button>
+      </div>
+    </header>
+
+    <div id="settingsPanel" class="hidden">
+      <div class="id-row">
+        <button id="detectBtn">IDを自動検出</button>
+      </div>
+      <label>または手動でユーザーID（数字）</label>
+      <div class="id-row">
+        <input type="text" id="userIdInput" placeholder="例: 504531725">
+        <button id="saveIdBtn">保存</button>
+      </div>
+      <p class="hint">Substackにログインした状態で「IDを自動検出」を押してください。</p>
+      <div id="saveMsg"></div>
+      <div class="panel-foot">
+        <button id="clearBtn">データを全消去（リセット）</button>
+      </div>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="検索（スペース区切りで複数語のAND検索）">
+    <div id="kindTabs">
+      <button data-kind="all" class="active">すべて</button>
+      <button data-kind="like">♥ いいね</button>
+      <button data-kind="saved">🔖 保存</button>
+    </div>
+    <p class="note">初回の同期は本文も取得するため、記事件数によっては数分かかります（次回以降はキャッシュから高速検索）。</p>
+    <div id="status"></div>
+    <ul id="results"></ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

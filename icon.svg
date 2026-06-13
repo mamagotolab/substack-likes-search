@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bbd98"/>
+      <stop offset="1" stop-color="#7a9d78"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="128" height="128" rx="28" fill="url(#bg)"/>
+  <!-- 虫眼鏡のハンドル -->
+  <line x1="70" y1="70" x2="98" y2="98" stroke="#fdfbf6" stroke-width="14" stroke-linecap="round"/>
+  <!-- 虫眼鏡のレンズ -->
+  <circle cx="50" cy="50" r="30" fill="#fbf7f0"/>
+  <circle cx="50" cy="50" r="30" fill="none" stroke="#fdfbf6" stroke-width="8"/>
+  <!-- レンズ内のハート（いいね） -->
+  <path d="M50 67 C50 67 32 55 32 45.5 C32 40.2 36.2 37 40.8 37 C44.4 37 47.2 39.6 50 42.6 C52.8 39.6 55.6 37 59.2 37 C63.8 37 68 40.2 68 45.5 C68 55 50 67 50 67 Z" fill="#c08a6e"/>
+</svg>

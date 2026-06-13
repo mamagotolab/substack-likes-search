@@ -1,0 +1,9 @@
+# ビルド成果物（ストア提出用ZIP）
+substack-likes-search.zip
+
+# 内部メモ（ストア提出手順・公開しない）
+STORE_LISTING.md
+
+# OS / エディタ
+.DS_Store
+*.swp
